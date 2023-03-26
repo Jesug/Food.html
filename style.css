@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(/images/Black-Burried-Pattern.jpg);
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 5%;
+}
+
+.logo {
+    color: goldenrod;
+    font-size: 20px;
+    font-family: 'satisfy', sans-serif;
+}
+
+span {
+    color: green;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 18px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: green;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-box {
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.text-box .para {
+    font-family: 'lora', sans-serif;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.text-box h2 {
+    font-size: 70px;
+    color: goldenrod;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.text-box p {
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-top: 25px;
+    color: #777;
+}    
+
+button {
+    margin-top: 30px;
+    padding: 12px 34px;
+    background: goldenrod;
+    color: #fff;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 green;
+}
+
+button:hover {
+    color: green;
+    transform: scale(1.1);
+}
+
+.img {
+    margin-top: 100px;
+    width: 500px;
+    background: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 goldenrod;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Our Menu */
+
+.menu {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-family: 'satisfy', sans-serif;
+    color: green;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+p {
+    padding: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777;
+}
+
+.row {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-col {
+    flex-basis: 31%;
+    background: rgb(202, 226, 247);
+    color: goldenrod;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: 0.5s;
+} 
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.menu-col:hover {
+    box-shadow: 0 0 10px 0 black;
+}
+
+/* Side Dishes */
+
+.dishes {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dish-col {
+    margin-top: 10px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.dish-col p {
+    text-align: center;
+}
+
+.dish-col img {
+    width: 90%;
+    display: block;
+    border-radius: 10px;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(221, 115, 207, 0.7);
+}
+
+.layer h3 {
+    width: 90%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 45%;
+    opacity: 1;
+}
+
+/* Site */
+
+.site {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.site-col {
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.site-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.site-col h3 {
+    margin-top: 10px;
+    padding: 0;
+    color: goldenrod;
+}
+
+.site-col p {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
